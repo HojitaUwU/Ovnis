@@ -16,7 +16,20 @@
       color: white;
       text-shadow: 1px 1px 2px black;
     }
-
+    nav {
+      background-color: rgba(0, 0, 0, 0.8);
+      text-align: center;
+      padding: 1rem;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 1rem;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
     .container {
       background-color: rgba(0, 0, 0, 0.75);
       margin: 2rem auto;
@@ -24,18 +37,15 @@
       max-width: 1000px;
       border-radius: 15px;
     }
-
     h1, h2 {
       text-align: center;
       margin-bottom: 1rem;
     }
-
     p {
       font-size: 1.1rem;
       line-height: 1.6;
       text-align: justify;
     }
-
     img {
       display: block;
       max-width: 90%;
@@ -46,58 +56,10 @@
       width: 100%;
       height: auto;
     }
-
     .quote {
       font-style: italic;
       text-align: center;
       margin-top: 1rem;
-    }
-
-    nav {
-      text-align: center;
-      margin-top: 1rem;
-    }
-
-    nav a {
-      margin: 0 1rem;
-      color: lightgreen;
-      font-weight: bold;
-      text-decoration: none;
-    }
-
-    .galeria-evidencias img {
-      max-width: 100%;
-      margin: 1rem auto;
-      cursor: pointer;
-      transition: transform 0.3s;
-    }
-
-    .galeria-evidencias img:hover {
-      transform: scale(1.03);
-    }
-
-    #lightbox {
-      display: none;
-      position: fixed;
-      z-index: 999;
-      top: 0; left: 0;
-      width: 100%;
-      height: 100%;
-      background: rgba(0,0,0,0.8);
-    }
-
-    #lightbox img {
-      display: block;
-      max-width: 90%;
-      max-height: 80%;
-      margin: 5% auto;
-      border: 4px solid white;
-      border-radius: 10px;
-      box-shadow: 0 0 20px black;
-    }
-
-    #lightbox:target {
-      display: block;
     }
   </style>
 </head>
@@ -119,80 +81,66 @@
     });
   </script>
 
-  <div class="container">
+  <nav>
+    <a href="#inicio">Inicio</a>
+    <a href="#evidencia">Evidencia de Trabajo</a>
+    <a href="#autor">Acerca de</a>
+  </nav>
+
+  <div class="container" id="inicio">
     <h1>🌌 Avistamientos de OVNIs en Estados Unidos</h1>
 
-    <nav>
-      <a href="#evidencia">📂 Ver Evidencia de Trabajo</a>
-    </nav>
-
     <p>
-      Este sitio presenta una visualización de datos basada en reportes de objetos voladores no identificados (OVNIs) observados en Estados Unidos. Se utilizaron herramientas estadísticas para entender patrones comunes.
+      Este sitio presenta una visualización de datos basada en reportes de objetos voladores no identificados (OVNIs) observados en Estados Unidos.
+      
     </p>
 
-    <h2>📊 Formas Comunes de OVNIs</h2>
-    <img src="imagenes/Imagen grafico Formas comunes de Ovnis.png" alt="Formas de OVNI">
+    <h2>📊 Formas Comunes de OVNI</h2>
+    <p>
+      Las formas más reportadas por los testigos incluyen luces, esferas, triángulos y discos. El siguiente gráfico presenta el top 5 de las más mencionadas.
+    </p>
+    <img src="imagenes/Imagen grafico Formas comunes de Ovnis.png" alt="Formas comunes de OVNI">
 
-    <h2>📈 Avistamientos por Año en EE.UU.</h2>
-    <img src="imagenes/Imagen grafico de Ovnis por años en EEUU.png" alt="Ovnis por año">
+    <h2>📈 Avistamientos por Año</h2>
+    <p>
+      Se muestra la evolución de los reportes a lo largo del tiempo. Hay picos que podrían relacionarse con fenómenos culturales o tecnológicos.
+    </p>
+    <img src="imagenes/Imagen grafico de Ovnis por años en EEUU.png" alt="Avistamientos por Año">
 
     <h2>🗺️ Top 10 Estados con más Reportes</h2>
-    <img src="imagenes/Imagen grafico top 10 estados .png" alt="Top 10 estados con más reportes">
-
-    <h2>👤 Autor</h2>
     <p>
-      Proyecto desarrollado por <strong>Benjamín Alejandro Fierro Guzmán</strong> como parte de un trabajo de análisis de datos con enfoque visual.
+      Estos son los estados que más reportes han generado. ¿Será por su ubicación, clima o simplemente por mayor cobertura mediática?
     </p>
-    <p class="quote">_"La verdad está ahí afuera... pero los datos están aquí."_</p>
+    <img src="imagenes/Imagen grafico top 10 estados .png" alt="Top 10 estados">
+
   </div>
 
-  <!-- Sección de Evidencia de Trabajo -->
+  <!-- Evidencia -->
   <div class="container" id="evidencia">
     <h2>📂 Evidencia de Trabajo</h2>
-    <p>A continuación se muestran capturas del desarrollo del proyecto:</p>
-    <div class="galeria-evidencias" id="galeria-evidencias"></div>
+    <p>Capturas del proceso de la evaluacion y posterior analisis para la visualización de datos:</p>
+
+    <!-- Mostrar imágenes de evidencia -->
+    <img src="imagenes/Evidencia1.png" alt="Evidencia 1">
+    <img src="imagenes/Evidencia2.png" alt="Evidencia 2">
+    <img src="imagenes/Evidencia3.png" alt="Evidencia 3">
+    <img src="imagenes/Evidencia4.png" alt="Evidencia 4">
+    <img src="imagenes/Evidencia5.png" alt="Evidencia 5">
+    <img src="imagenes/Evidencia6.png" alt="Evidencia 6">
+    <img src="imagenes/Evidencia7.png" alt="Evidencia 7">
+    <img src="imagenes/Evidencia10.png" alt="Evidencia 10">
+    <img src="imagenes/Evidencia11.png" alt="Evidencia 11">
+    <img src="imagenes/Evidencia12.png" alt="Evidencia 12">
   </div>
 
-  <!-- Lightbox para ampliar imágenes -->
-  <div id="lightbox">
-    <img id="lightbox-img" src="" alt="Vista ampliada">
+  <!-- Autor -->
+  <div class="container" id="autor">
+    <h2>👨‍💻 Autor</h2>
+    <p>
+      Pagina realizada por <strong>Benjamín Alejandro Fierro Guzmán</strong>.
+    </p>
+    <p class="quote">_"La verdad está ahí afuera donde las estrellas miran... pero los datos están aquí y el gobierno los oculta."_</p>
   </div>
-
-  <script>
-    const evidencias = [
-      "Captura desde 2025-05-27 11-45-34.png",
-      "Captura desde 2025-05-27 11-46-51.png",
-      "Captura desde 2025-05-28 18-46-36.png",
-      "Captura desde 2025-05-28 18-46-51.png",
-      "Captura desde 2025-05-28 19-12-13.png",
-      "Captura desde 2025-05-31 12-21-03.png",
-      "Captura desde 2025-05-31 12-21-26.png",
-      "Captura desde 2025-05-31 12-22-55.png",
-      "Captura desde 2025-05-31 12-23-04.png",
-      "Captura desde 2025-05-31 12-25-19.png",
-      "Captura desde 2025-05-31 12-26-22.png",
-      "Captura desde 2025-05-31 12-26-46.png"
-    ];
-
-    const galeria = document.getElementById("galeria-evidencias");
-    const lightbox = document.getElementById("lightbox");
-    const lightboxImg = document.getElementById("lightbox-img");
-
-    evidencias.forEach(nombre => {
-      const img = document.createElement("img");
-      img.src = "imagenes/" + nombre;
-      img.alt = nombre;
-      img.addEventListener("click", () => {
-        lightbox.style.display = "block";
-        lightboxImg.src = img.src;
-      });
-      galeria.appendChild(img);
-    });
-
-    lightbox.addEventListener("click", () => {
-      lightbox.style.display = "none";
-    });
-  </script>
 
 </body>
 </html>
