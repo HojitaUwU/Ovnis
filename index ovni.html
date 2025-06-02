@@ -8,7 +8,7 @@
     body {
       margin: 0;
       padding: 0;
-      background-image: url('Imagenes/Fondo Ovni.jpg');
+      background-image: url('imagenes/Fondo Ovni.jpg');
       background-size: cover;
       background-attachment: fixed;
       background-position: center;
@@ -105,7 +105,7 @@
 
   <!-- 🎵 Música ambiental -->
   <audio id="bg-music" loop preload="auto">
-    <source src="Imagenes/ufo-299350.mp3" type="audio/mpeg">
+    <source src="imagenes/Rick and Morty Theme Song [HD].mp3" type="audio/mpeg">
     Tu navegador no soporta la reproducción de audio.
   </audio>
 
@@ -131,13 +131,13 @@
     </p>
 
     <h2>📊 Formas Comunes de OVNIs</h2>
-    <img src="Imagenes/Imagen grafico Formas comunes de Ovnis.png" alt="Formas de OVNI">
+    <img src="imagenes/Imagen grafico Formas comunes de Ovnis.png" alt="Formas de OVNI">
 
     <h2>📈 Avistamientos por Año en EE.UU.</h2>
-    <img src="Imagenes/Imagen grafico de Ovnis por años en EEUU.png" alt="Ovnis por año">
+    <img src="imagenes/Imagen grafico de Ovnis por años en EEUU.png" alt="Ovnis por año">
 
     <h2>🗺️ Top 10 Estados con más Reportes</h2>
-    <img src="Imagenes/Imagen grafico top 10 estados .png" alt="Top 10 estados con más reportes">
+    <img src="imagenes/Imagen grafico top 10 estados .png" alt="Top 10 estados con más reportes">
 
     <h2>👤 Autor</h2>
     <p>
@@ -180,7 +180,7 @@
 
     evidencias.forEach(nombre => {
       const img = document.createElement("img");
-      img.src = "Imagenes/" + nombre;
+      img.src = "imagenes/" + nombre;
       img.alt = nombre;
       img.addEventListener("click", () => {
         lightbox.style.display = "block";
